@@ -2,10 +2,17 @@ import { Button, Card, Carousel, Col, Container, Form, InputGroup, ListGroup, Na
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
+
 function App() {
+  const  firstName= prompt("type your first name");
+  // console.log{firstName}
+  let name="rafaa"
+  let lastName="Ben Hassine"
   return (
 
-    <div className="App">
+      <div className="App">
       
       <div>
         <Navbar className="bg-body-tertiary justify-content-between">
@@ -20,7 +27,9 @@ function App() {
             </InputGroup>
           </Form>
           
-          <div className='rafpet'><img src="  "/></div>
+          <div className='rafpet'>
+            <img src="  "/>
+          </div>
           
           <Form inline>
             <Row>
@@ -55,9 +64,7 @@ function App() {
           
       
       <div className='haroun'>
-        <div>
           <>
-            <Button variant="light">HOME |</Button>{' '}
             <Button variant="primary">CHIENS</Button>{' '}
             <Button variant="secondary">CHATS</Button>{' '}
             <Button variant="success">RONGEURS</Button>{' '}
@@ -67,13 +74,20 @@ function App() {
             <Button variant="light">BONS PLANS</Button>{' '}
             <Button variant="link">Link</Button>
           </>
-        </div> 
       </div>
       
 
-      <h1 className='class'>Produits Pour Animaux</h1>
-      <div className='rafpets'><img src="https://scontent.ftun9-1.fna.fbcdn.net/v/t39.30808-6/301382704_550217363570783_7804836825405236399_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=be3454&_nc_ohc=UtzEKLWD2lQAX9CoNIf&_nc_ht=scontent.ftun9-1.fna&oh=00_AfD0cgfpEaF2Ttj_zvSC0YmOVNlOnLYJO0DAU2cNTzbj8A&oe=64DDE2EA"/></div>
-      
+      <h1 className='produits'>Produits Pour Animaux</h1>
+
+      {/* Si l'image est dans un sous-dossier
+      <img src="/subfolder/myImage.png" alt="myImage" />
+      Si l'image est dans le meme dossier
+      <img src="/myImage.png" alt="myImage"/> */}
+
+      <div className='rafpets'>
+      <img src="https://scontent.ftun10-1.fna.fbcdn.net/v/t39.30808-6/301382704_550217363570783_7804836825405236399_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=L7Mohu_T_h4AX-yATpv&_nc_ht=scontent.ftun10-1.fna&oh=00_AfANc6iaNs_ivRrIfZl_3vYGv2pYSzey47vZEuMr_lgQIQ&oe=651347AA"/>
+      </div>
+
       <div className='carte'>
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src="https://all-for-pets.tn/site/images/CHIENS/Selleries/Harnais/reste-04-Personnalis.png" />
@@ -153,9 +167,45 @@ function App() {
           </Card.Body>
         </Card> 
       
+        <div>
+        
+        <p style={{color:'gold',fontSize:"20px"}}>created by {name+" "+lastName}</p>
+        
+        <h1 style={{color:'red',fontSize:"20px"}}>hello {firstName?firstName:"user"}</h1>
+      
+        <p style={{color:'green',fontSize:"20px"}}>created by {name && lastName?name+" "+lastName:"user"}</p>
+
+        <p style={{color:'blue',fontSize:"20px"}}>hello {name || lastName?name+" "+lastName:"user"}</p> 
+
+        {[1,2,3,4].map(value=><p>{value}</p>)}
+
+    </div>
+
+        {/* function App() {
+            const  firstName= prompt("type your first name");
+              // console.log{firstName}
+            let name="rafaa"
+            let lastName=" Ben Hassine"
+         return ( */}
+        
+        <div>
+        
+            {/* <p style={{color:'gold',fontSize:"20px"}}>created by {name+" "+lastName}</p>
+            
+            {[1,2,3,4].map(value=><p>{value}</p>)} */}
+          
+            <h1 style={{color:'gold',fontSize:"20px"}}>hello {firstName?firstName:"user"}</h1>
+          
+            {/* <p style={{color:'gold',fontSize:"20px"}}>created by {name && lastName?name+" "+lastName:"user"}</p>
+
+            <p style={{color:'gold',fontSize:"20px"}}>created by {name || lastName?name+" "+lastName:"user"}</p> */}
+
+
+        </div>
+
       </div> 
-    </div> 
     
+    </div> 
     
 
     
@@ -167,3 +217,22 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+<div>
+
+{/* <p style={{color:'gold',fontSize:"20px"}}>created by {name+" "+lastName}</p>
+
+{[1,2,3,4].map(value=><p>{value}</p>)} */}
+
+{/* <h1 style={{color:'gold',fontSize:"20px"}}>hello {firstName?firstName:"user"}</h1> */}
+
+{/* <p style={{color:'gold',fontSize:"20px"}}>created by {name && lastName?name+" "+lastName:"user"}</p>
+
+<p style={{color:'gold',fontSize:"20px"}}>created by {name || lastName?name+" "+lastName:"user"}</p> */}
+
+
+</div>

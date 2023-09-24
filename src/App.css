@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-.class {
-  color:silver;font-size: 50px;background-color:gold ;
+.produits {
+  color:silver;font-size: 50px;background-color:gold ;background-color: aquamarine;
 }
 
 .carte {
@@ -11,7 +11,7 @@
 }
 
 .haroun {
-    background: white;
+    justify-content:space-between;
 }
 
 .rafpet {
@@ -25,8 +25,18 @@
 
 
 
+
+
+
+
+
+
 /*background:#17923b no-repeat center top;
 background:grey no-repeat center top;
 color: lightseagreen;
 display:flex ;justify-content:space-around;
 */
+
+
+
+
