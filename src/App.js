@@ -72,7 +72,7 @@ function App() {
             <Button variant="danger">OISEAUX</Button>{' '}
             <Button variant="info">NOS MAGASINS</Button>{' '}
             <Button variant="light">BONS PLANS</Button>{' '}
-            <Button variant="link">Link</Button>
+            
           </>
       </div>
       
@@ -222,17 +222,3 @@ export default App;
 
 
 
-<div>
-
-{/* <p style={{color:'gold',fontSize:"20px"}}>created by {name+" "+lastName}</p>
-
-{[1,2,3,4].map(value=><p>{value}</p>)} */}
-
-{/* <h1 style={{color:'gold',fontSize:"20px"}}>hello {firstName?firstName:"user"}</h1> */}
-
-{/* <p style={{color:'gold',fontSize:"20px"}}>created by {name && lastName?name+" "+lastName:"user"}</p>
-
-<p style={{color:'gold',fontSize:"20px"}}>created by {name || lastName?name+" "+lastName:"user"}</p> */}
-
-
-</div>
